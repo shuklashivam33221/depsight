@@ -38,3 +38,7 @@ program
   });
 
 program.parse();
+
+// depsight lodash       →  .argument()  →  "lodash" is DATA passed to the why handler
+// depsight duplicates   →  .command()   →  "duplicates" is a FIXED ROUTE to its own handler
+// depsight doctor       →  .command()   →  "doctor" is a FIXED ROUTE to its own handler
