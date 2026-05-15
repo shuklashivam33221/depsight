@@ -27,7 +27,14 @@
     "npm",
     "pnpm",
     "diagnostics",
-    "cli"
+    "cli",
+    "dependency-graph",
+    "node-modules",
+    "lockfile",
+    "dependency-tree",
+    "tree-visualizer",
+    "developer-tools",
+    "dependency-management"
   ],
   "author": "Shivam Shukla",
   "license": "MIT",
