@@ -2,6 +2,7 @@
 
 import { Command } from 'commander';
 import { whyCommand } from './commands/why';
+import { duplicatesCommand } from './commands/duplicates';
 
 const program = new Command();
 
@@ -24,8 +25,7 @@ program
   .command('duplicates')
   .description('Find packages with multiple versions installed')
   .action(() => {
-    console.log('\n  📦 Duplicate Analysis\n');
-    console.log('  Duplicates command coming soon...\n');
+    duplicatesCommand();
   });
 
 // Command 3: depsight doctor
