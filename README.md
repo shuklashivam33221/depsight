@@ -1,5 +1,10 @@
 # 🔍 Depsight
 
+[![npm version](https://img.shields.io/npm/v/depsight)](https://npmjs.com/package/depsight)
+[![license](https://img.shields.io/npm/l/depsight)](LICENSE)
+[![CI](https://github.com/shuklashivam33221/depsight/actions/workflows/ci.yml/badge.svg)](https://github.com/shuklashivam33221/depsight/actions)
+[![node](https://img.shields.io/node/v/depsight)](https://nodejs.org)
+
 **Dependency debugging CLI for modern JavaScript projects.**
 
 > Ever wondered _"Why is this random package in my node_modules?"_ — Depsight tells you.

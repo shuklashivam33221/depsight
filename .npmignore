@@ -2,11 +2,17 @@
 src/
 tsconfig.json
 
-# Development files
+# Tests
+tests/
+
+# Development & CI files
+.github/
+.editorconfig
+.gitignore
+
+# Documentation (except README)
 *.md
 !README.md
-.gitignore
-.git/
 
 # Personal notes
 dep_why_implementation_plan.md

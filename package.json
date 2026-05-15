@@ -9,9 +9,26 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "start": "node dist/cli.js"
+    "start": "node dist/cli.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
-  "keywords": ["dependency", "debug", "npm", "pnpm", "diagnostics", "cli"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuklashivam33221/depsight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shuklashivam33221/depsight/issues"
+  },
+  "homepage": "https://github.com/shuklashivam33221/depsight#readme",
+  "keywords": [
+    "dependency",
+    "debug",
+    "npm",
+    "pnpm",
+    "diagnostics",
+    "cli"
+  ],
   "author": "Shivam Shukla",
   "license": "MIT",
   "dependencies": {
@@ -23,10 +40,13 @@
   "devDependencies": {
     "@types/node": "^25.6.0",
     "@types/semver": "^7.7.1",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
   },
   "engines": {
     "node": ">=16.0.0"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
