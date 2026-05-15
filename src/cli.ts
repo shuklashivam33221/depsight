@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+import { whyCommand } from './commands/why';
 
 const program = new Command();
 
@@ -14,8 +15,7 @@ program
   .argument('[package]', 'Package name to trace')
   .action((packageName?: string) => {
     if (packageName && packageName !== 'duplicates' && packageName !== 'doctor') {
-      console.log(`\n  🔍 Tracing: ${packageName}\n`);
-      console.log('  Why command coming soon...\n');
+      whyCommand(packageName);
     }
   });
 
@@ -38,7 +38,3 @@ program
   });
 
 program.parse();
-
-// depsight lodash       →  .argument()  →  "lodash" is DATA passed to the why handler
-// depsight duplicates   →  .command()   →  "duplicates" is a FIXED ROUTE to its own handler
-// depsight doctor       →  .command()   →  "doctor" is a FIXED ROUTE to its own handler
