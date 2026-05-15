@@ -1,0 +1,13 @@
+# Source files (users only need the compiled dist/)
+src/
+tsconfig.json
+
+# Development files
+*.md
+!README.md
+.gitignore
+.git/
+
+# Personal notes
+dep_why_implementation_plan.md
+depsight_walkthrough.md

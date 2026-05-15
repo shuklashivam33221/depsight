@@ -12,18 +12,18 @@
     "start": "node dist/cli.js"
   },
   "keywords": ["dependency", "debug", "npm", "pnpm", "diagnostics", "cli"],
-  "author": "",
+  "author": "Shivam Shukla",
   "license": "MIT",
   "dependencies": {
     "commander": "^14.0.3",
     "picocolors": "^1.1.1",
     "semver": "^7.7.4",
-    "typescript": "^6.0.3",
     "yaml": "^2.8.4"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
-    "@types/semver": "^7.7.1"
+    "@types/semver": "^7.7.1",
+    "typescript": "^6.0.3"
   },
   "engines": {
     "node": ">=16.0.0"

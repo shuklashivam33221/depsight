@@ -3,6 +3,7 @@
 import { Command } from 'commander';
 import { whyCommand } from './commands/why';
 import { duplicatesCommand } from './commands/duplicates';
+import { doctorCommand } from './commands/doctor';
 
 const program = new Command();
 
@@ -33,8 +34,7 @@ program
   .command('doctor')
   .description('Run full dependency health check with fix suggestions')
   .action(() => {
-    console.log('\n  🩺 Dependency Health Report\n');
-    console.log('  Doctor command coming soon...\n');
+    doctorCommand();
   });
 
 program.parse();
