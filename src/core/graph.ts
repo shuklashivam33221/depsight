@@ -5,11 +5,11 @@ import { PackageNode, LockfileData } from '../types';
 // This describes the shape of our dependency graph
 export interface DependencyGraph {
   // Forward: "who does this package depend on?"
-  // Example: "root" → {"node_modules/commander", "node_modules/picocolors"}
+  // forward: If you look up express, it gives you a Set: {"body-parser", "cookie-parser"}
   forward: Map<string, Set<string>>;
 
   // Reverse: "who depends on this package?"
-  // Example: "node_modules/commander" → {""}  (root depends on it)
+  // body-parser, it gives you a Set: {"express"}
   reverse: Map<string, Set<string>>;
 
   // The actual data for each package (same data from Phase 2)
@@ -46,7 +46,7 @@ export function buildGraph(lockfileData: LockfileData): DependencyGraph {
       const depPath = `node_modules/${depName}`;
 
       if (nodes.has(depPath)) {
-        // Draw the FORWARD arrow: "I depend on you"
+        // Draw the FORWARD arrow: "I depend on you" non null assertion operator 
         forward.get(pkgPath)!.add(depPath);
 
         // Draw the REVERSE arrow: "You are needed by me"
