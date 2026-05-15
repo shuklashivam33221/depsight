@@ -1,7 +1,7 @@
 # 🔍 Depsight
 
 [![npm version](https://img.shields.io/npm/v/depsight)](https://npmjs.com/package/depsight)
-[![license](https://img.shields.io/npm/l/depsight)](LICENSE)
+[![license](https://img.shields.io/github/license/shuklashivam33221/depsight)](LICENSE)
 [![CI](https://github.com/shuklashivam33221/depsight/actions/workflows/ci.yml/badge.svg)](https://github.com/shuklashivam33221/depsight/actions)
 [![node](https://img.shields.io/node/v/depsight)](https://nodejs.org)
 

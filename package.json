@@ -4,7 +4,7 @@
   "description": "Dependency debugging CLI for modern JavaScript projects. Explain, diagnose, and fix dependency problems.",
   "main": "dist/cli.js",
   "bin": {
-    "depsight": "./dist/cli.js"
+    "depsight": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc",
